@@ -1,0 +1,87 @@
+body{
+    font-family: customFont;
+}
+
+@font-face {
+    font-family: "customFont";
+    src: url('JF-Flat-regular.ttf');
+}
+
+.bg ,footer{
+  background:#0F203C;
+}
+
+.image{
+  height:200px;
+}
+
+.category ul li {
+    display: inline-block;
+    margin-bottom:5px;
+}
+
+.category ul li a {
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: #000;
+  padding: 5px 19px;
+  display: inline-block;
+  margin: 0 3px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.v_line {
+  border-left: 1px solid rgb(240, 240, 235);
+  height: 190;
+}
+
+/******************************************* */
+.rating  {
+  color:gold;
+}
+
+.rating > h5 {
+  color:rgb(87, 83, 83);
+}
+
+.rating:not(:checked) > input {
+  display:none;
+  cursor: pointer;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating:not(:checked) > label {
+  float:left;
+  cursor:pointer;
+  font-size:160%;
+  color:#ddd;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+
+.rating > input:checked ~ label {
+    color: gold;
+}
+
+#place_url {
+  text-align: left;
+  unicode-bidi: plaintext;
+}    
+
+#addressList {
+  cursor:pointer;
+}
+
